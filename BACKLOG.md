@@ -24,3 +24,7 @@ získat verzi/platformu cílové instalace a zpřístupnit prostředí pro build
 Poté 002/003 a naměření Unity verze. XSG-004A, 007A a 011A obnovit po dodání
 nových herních dat nebo konkrétního nového primárního zdroje; neopakovat stejnou rešerši.
 Rozšíření dokumentace je hotové jen tehdy, když odstraňuje konkrétní technickou nejasnost.
+
+Kontrola 2026-09-25 / 004: nové vstupy ani výsledky testů nejsou dostupné;
+všechny stavy zůstávají beze změny. První běh bez pokroku, nikoli dokončení XSG-001.
+Záznam: reports/2026-09-25-004.md. Nezakládat náhradní READY práci jen kvůli běhu.

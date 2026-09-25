@@ -3,8 +3,9 @@
 Aktualizováno: 2026-09-25, Europe/Prague.
 Fáze: M0, příprava loaderu, doložené mechanismy mise/tlaku a export grafiky.
 Zdrojový loader: 0.1.1, nesestavený.
-Ruční zaváděcí běhy: 1. Dokončené plánované běhy: 3. Běhy bez pokroku: 0.
-Počet platí až po úspěšném uložení commitu obsahujícího report 003.
+Ruční zaváděcí běhy: 1. Dokončené plánované běhy: 4. Běhy bez pokroku: 1.
+Počet platí až po úspěšném uložení commitu obsahujícího report 004.
+Z toho běhy s vývojovým výsledkem: 3; běh 004 je pouze kontrola dostupnosti vstupů.
 Dokončení rozpracovaného běhu se počítá jednou; bootstrap a migrace se nepočítají.
 
 - Připraveno: samostatný projekt, loader s logováním, konfigurace a testovací scénář.
@@ -33,14 +34,18 @@ Dokončení rozpracovaného běhu se počítá jednou; bootstrap a migrace se ne
   Unity Editor není dostupný; nevznikl AssetBundle ani model instalovaný ve hře.
 - Herní expedice, extrakce, trvalá odměna a odklad invaze nejsou implementované.
 - Jediná pracovní autorita: Horus-3-Echo/xenonauts2-stargate, main.
-  Vstupní SHA: fabc79de128068abdc0881cda09d49655b727488.
-  Načteno 25 vzdálených souborů; bajty ověřeny proti Git blobům.
+  Vstupní SHA běhu 004: a0a7bc057d520b681942772e8b41d985ed9d99f6.
+  Povinné dokumenty a všechny reports/ načteny z tohoto vzdáleného commitu.
 - Nové build/herní protokoly: žádné ve vzdáleném main; přečteny všechny reports/.
-  Obnovený místní návrh porovnán s tímto vzdáleným základem, nikoli použit jako autorita.
-- Poslední práce: reports/2026-09-25-003.md. Společné zadání v1 beze změny.
+  V dostupném workspace nenalezeny nové herní DLL, lokální konfigurace ani logy;
+  dotnet/csc/mcs/Unity/unity-editor nejsou na PATH. Není to kontrola počítače uživatele.
+- Poslední vývojová práce: reports/2026-09-25-003.md; kontrola bez pokroku:
+  reports/2026-09-25-004.md. Společné zadání v1 beze změny.
+- Běh 004 nemění kód ani stav úkolů. T00/T00A výše jsou výsledky běhu 003,
+  nikoli nově spuštěné testy; build ani hra v běhu 004 neproběhly.
 
 V backlogu nezbývá nezávislý READY krok. Jediná další priorita: XSG-001 —
 získat verzi/build, platformu a větev instalace, poté zajistit build prostředí
 pro loader dle BUILD.md. Přesná Unity verze bude naměřena jeho logem.
 Bez těchto vstupů neopakovat stejnou rešerši jako nový pokrok. Běh 003 přinesl
-nové zdroje/nález; hranice tří běhů bez pokroku zatím nebyla dosažena.
+nové zdroje/nález; po běhu 004 je počet běhů bez pokroku 1 ze 3.
