@@ -33,3 +33,12 @@
   ověřit i načtení v obou fázích, pokračující výzkum/léčení a jednorázové
   obnovení bez návalu zmeškaných událostí. Nález: docs/XSG-007A-CAMPAIGN-PRESSURE.md.
   X-D003/004 ani společné zadání v1 se nemění; nová runtime závislost nevzniká.
+- 2026-09-25 / X-D010: pro XSG-011A oddělit editorový export od runtime loaderu.
+  Loader 0.1.1 pouze přidává log Application.unityVersion. Výchozí dokumentovaná
+  řada 2022.3 nenahrazuje naměřenou plnou verzi; exportér vyžaduje explicitní
+  editor, platformu a ověřené načítací jméno. Pro první pokus požadujeme shodu
+  editoru s runtime jako projektové omezení, nikoli prokázanou kompatibilitu.
+  Postup s vlastním názvem balíčku podmínit ověřením větve 7.24; zachovat
+  kořenový manifest a rozlišovat jej od starého X2 manifestu i výstupů Unity.
+  Herní assety později načítat přes X2 ContentManager. Unity Addressables,
+  UnityEditor ani další knihovnu do runtime nepřidávat. X-D003/004 beze změny.

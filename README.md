@@ -1,6 +1,6 @@
 # Stargate — Xenonauts 2
 
-Zdrojový startér 0.1.0, připravený 2026-09-25. Není to sestavený ani hratelný mód.
+Zdrojový startér 0.1.1, připravený 2026-09-25. Není to sestavený ani hratelný mód.
 Obsahuje první kód pro záznam načtení módu a životního cyklu hry, soubory
 projektu, backlog a testovací postup. Herní výprava ještě není implementovaná.
 
@@ -17,6 +17,10 @@ Jde o syntetické testy Python nástroje, nikoli build C# nebo spuštění výpr
 Nález XSG-007A: [mapa invaze a časového tlaku](docs/XSG-007A-CAMPAIGN-PRESSURE.md)
 odděluje časovou osu, naplánované události, fáze a Doomsday/regionální efekty.
 Skutečné klíče cílové kampaně i implementace odkladu ještě chybí.
+
+XSG-011A: [export dočasné brány](docs/XSG-011A-ASSET-EXPORT.md) obsahuje ověřené
+Unity API, omezení verzí a postup kontroly balíčku. Loader nově vypisuje skutečnou
+Unity verzi; samostatný editorový exportér je připravený zdroj, bez kompilace.
 
 Projekt je oddělený od druhé varianty módu. Sdílí pouze zadání v1.
 Pracovní autoritou je [Horus-3-Echo/xenonauts2-stargate](https://github.com/Horus-3-Echo/xenonauts2-stargate), větev `main`.

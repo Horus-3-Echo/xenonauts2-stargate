@@ -14,6 +14,8 @@
 | T12 | M1: ztráta týmu / nosiče | žádná neoprávněná odměna |
 | T13 | M1: opakované načtení a zpracování výsledku | odměna právě jednou |
 | T14 | M1: řízení původní kampaně | průchod definovaným úvodním intervalem |
+| T20 | Export prefabu v ověřeném Unity Editoru | Přesný podmíněný postup v XSG-011A-ASSET-EXPORT.md; Editor log, manifesty, SHA-256 balíčku; nyní NOT_RUN |
+| T21 | Indexace a zobrazení vlastní geometrie v X2 | Postup v XSG-011A-ASSET-EXPORT.md; log a screenshot; nyní NOT_RUN, čeká na T20 a XSG-011B |
 
 T00 nenahrazuje T01–T04. Pro počáteční loader zatím provádět jen T00–T04.
 Testy M1 se stanou vykonatelnými až po implementaci jednotlivých částí.

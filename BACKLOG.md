@@ -15,11 +15,12 @@
 | XSG-008 | BLOCKED | Uložení/načtení a jednorázové přiznání výsledku, T13; po 006. |
 | XSG-009 | BLOCKED | Vyhodnotit technickou proveditelnost na skutečných důkazech. |
 | XSG-010 | BLOCKED | Artefakt odemkne testovací výzkum/adresu; po 008. |
-| XSG-011A | READY | Určit verzi Unity a ověřitelný exportní postup pro jednoduchou vlastní bránu. |
+| XSG-011A | BLOCKED | Veřejná část a zdroj exportéru připraveny v docs/XSG-011A-ASSET-EXPORT.md. Doložena řada Unity 2022.3 a rozlišení manifestů po 7.24; loader 0.1.1 vypisuje Application.unityVersion. Přesný runtime/editor, platforma, kanonická adresa assetu a podsložka balíčků čekají na cílovou instalaci. Editorový build/export T20 ani hra T21 neproběhly. |
 | XSG-011B | BLOCKED | Import a test vlastní geometrie; po 011A a funkčním M1. |
 | XSG-012 | BLOCKED | Opakovatelný testovací instalační balíček a návod; po sestavení a herních testech. |
 
-Nejbližší nezablokovaná práce: 011A. XSG-004A a 007A obnovit po dodání nových
-herních dat nebo konkrétního nového primárního zdroje; neopakovat stejnou rešerši.
-Po zpřístupnění instalace mají přednost 001 → 002/003 a potvrzení loaderu.
+V aktuálním backlogu nezbývá nezávislý READY krok. Jediná další priorita: XSG-001,
+získat verzi/platformu cílové instalace a zpřístupnit prostředí pro build loaderu.
+Poté 002/003 a naměření Unity verze. XSG-004A, 007A a 011A obnovit po dodání
+nových herních dat nebo konkrétního nového primárního zdroje; neopakovat stejnou rešerši.
 Rozšíření dokumentace je hotové jen tehdy, když odstraňuje konkrétní technickou nejasnost.

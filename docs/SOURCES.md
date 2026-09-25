@@ -62,3 +62,28 @@ Zkontrolován úplný strom [oficiálních příkladů](https://github.com/Goldh
 na commitu `2214d043e35e56c0cdb02bf83ce08645b029b648`; obsahové příklady jsou
 krytí a zdraví MARS. Konkrétní data úvodní invaze v tomto stromu nejsou.
 Nález a jeho hranice: [XSG-007A-CAMPAIGN-PRESSURE.md](XSG-007A-CAMPAIGN-PRESSURE.md).
+
+## Rešerše XSG-011A — 2026-09-25
+
+Oficiální wiki HEAD ověřen znovu přes `git ls-remote`: stále
+`7232e8b8988496f78de492639c4fce48ca8cc60e`. Čtené lokální Markdown soubory
+odpovídají čistému git snapshotu; část primárních stránek byla otevřena také na webu.
+
+| Goldhawk zdroj | Použitá část | Git blob |
+| --- | --- | --- |
+| [Content Manager](https://github.com/GoldhawkInteractive/X2-Modding/wiki/content-manager-usage) | Unity 2022.3, vlastní systém X2, deklarace potřebných assetů | `fbd7085ae3d61bf0da14dbcf4b92b1f4f1d2d613` |
+| [Content Pack Loading](https://github.com/GoldhawkInteractive/X2-Modding/wiki/content-pack-loading) | Větev 7.24, indexace a diagnostika, odstranění starého X2 manifestu | `fc4ddc2d97a2f0e657778713729bbde2ee979042` |
+| [Asset Structure](https://github.com/GoldhawkInteractive/X2-Modding/wiki/asset-structure) | Typ/screen/jméno; starší odstavec o balíčcích vyžaduje rozlišení verzí | `dae9aa121a840c07648948a3171c8d93a00d12fd` |
+| [Mod Definition](https://github.com/GoldhawkInteractive/X2-Modding/wiki/mod-definition) | Kořenový manifest módu | `dd0e8eaf7f5ad3baa9cae1fca2f2142ec7899755` |
+| [Changelog](https://github.com/GoldhawkInteractive/X2-Modding/wiki/Changelog) | Zařazení refaktoru k 7.24 | `53b38914610b1a415559ca0656d1c19ff00ca4f7` |
+
+Unity dokumentace 2022.3, ověřená konkrétní rozhraní:
+
+- [Application.unityVersion](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Application-unityVersion.html): řetězec runtime verze; přidán do existujícího logování loaderu.
+- [BuildPipeline.BuildAssetBundles](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/BuildPipeline.BuildAssetBundles.html): overload `(string, AssetBundleBuild[], BuildAssetBundleOptions, BuildTarget)`; při selhání null nebo výjimka.
+- [AssetBundleBuild](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/AssetBundleBuild.html) a [addressableNames](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/AssetBundleBuild-addressableNames.html): explicitní jméno balíčku, vstupní soubor a načítací jméno.
+- [AssetDatabase.LoadAssetAtPath](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/AssetDatabase.LoadAssetAtPath.html): ověření importovaného prefabu v Editoru.
+- [Building AssetBundles](https://docs.unity3d.com/2022.3/Documentation/Manual/AssetBundles-Building.html): editorový build, platformy a výstupní manifestové soubory.
+
+Rozhraní byla ověřena v dokumentaci; exportér nebyl zkompilován v Unity Editoru.
+Nález neprokazuje přesný patch, shader ani adresu/podsložku cílové instalace.

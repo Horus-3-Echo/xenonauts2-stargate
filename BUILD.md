@@ -16,9 +16,16 @@ až kompilace proti knihovnám konkrétní hry; viz DECISIONS.md a docs/SOURCES.
    uživatelské složce módů. Jeho kořen obsahuje mod/manifest.json; výstup
    StargateX2.dll patří do assembly/common/. Build sám nic do hry nekopíruje.
 5. Povol tento mód a spusť novou testovací kampaň. V logu vyhledej
-   `[XSG] loaded version=0.1.0` a `[XSG] world-created section=Strategy`.
+   `[XSG] loaded version=0.1.1`, `[XSG] unity-version=<skutečná verze>`
+   a `[XSG] world-created section=Strategy`. Hodnotu unity-version zapiš do
+   `unity_runtime_version` v environment.local.json; nesmí zůstat prázdná.
 6. Ulož a načti testovací kampaň, znovu zkontroluj vytvoření strategického světa
    a chyby loaderu. Přilož log, verzi hry a seznam povolených módů.
 
 T00 bez hry: `python tools/check_source.py`. Tato kontrola nepřekládá C#.
 Zdrojový ZIP není připravený instalační ZIP, protože neobsahuje sestavenou DLL.
+
+Export grafiky je samostatný krok: [XSG-011A](docs/XSG-011A-ASSET-EXPORT.md).
+`tools/unity/Editor/XsgBundleExport.cs` je zdroj pro Unity Editor, nikoli součást
+StargateX2.dll. Zde nebyl zkompilován ani spuštěn. Nepřidávat UnityEditor nebo
+Addressables do runtime projektu a nepřesouvat exportér pod src/StargateX2/.

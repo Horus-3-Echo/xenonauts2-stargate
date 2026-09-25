@@ -12,7 +12,8 @@ namespace StargateX2
     {
         public void Create(Mod mod, Harmony patcher)
         {
-            Debug.Log("[XSG] loaded version=0.1.0");
+            Debug.Log("[XSG] loaded version=0.1.1");
+            Debug.Log("[XSG] unity-version=" + Application.unityVersion);
         }
 
         public void Destroy()
