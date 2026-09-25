@@ -14,6 +14,10 @@ zbývající vstupy a postup read-only kontroly skutečného moddable_content.zi
 Testy tohoto diagnostického nástroje: `python -m unittest discover -s tests -v`.
 Jde o syntetické testy Python nástroje, nikoli build C# nebo spuštění výpravy.
 
+Nález XSG-007A: [mapa invaze a časového tlaku](docs/XSG-007A-CAMPAIGN-PRESSURE.md)
+odděluje časovou osu, naplánované události, fáze a Doomsday/regionální efekty.
+Skutečné klíče cílové kampaně i implementace odkladu ještě chybí.
+
 Projekt je oddělený od druhé varianty módu. Sdílí pouze zadání v1.
 Pracovní autoritou je [Horus-3-Echo/xenonauts2-stargate](https://github.com/Horus-3-Echo/xenonauts2-stargate), větev `main`.
 Zdrojový ZIP byl 2026-09-25 převeden do repozitáře včetně prvního plánovaného běhu.

@@ -24,3 +24,12 @@
   `Horus-3-Echo/xenonauts2-stargate`, větev `main`, jako jedinou pracovní autoritu.
   Toto nahrazuje dočasné X-D002. Přenést poslední ZIP v1 včetně prvního běhu;
   starý ZIP dále nerozvíjet. Zachovat oddělení projektů a zadání v1.
+- 2026-09-25 / X-D009: odklad úvodní invaze připravovat jako cílené řízení
+  doložených původců hrozeb, nikoli zastavení společného času, plošné odstranění
+  TimelineSystem nebo smazání singletonu AlienInvasion. Dokumentace odděluje
+  časovou osu, scheduler, projekty a Doomsday/regionální efekty; samotná nulová
+  sazba Doomsday neprokazuje odklad ostatních větví. Přesné klíče, obsluha a
+  obnovení zatím nejsou známy, proto žádný runtime patch. Budoucí T14 musí
+  ověřit i načtení v obou fázích, pokračující výzkum/léčení a jednorázové
+  obnovení bez návalu zmeškaných událostí. Nález: docs/XSG-007A-CAMPAIGN-PRESSURE.md.
+  X-D003/004 ani společné zadání v1 se nemění; nová runtime závislost nevzniká.
