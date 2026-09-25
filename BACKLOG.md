@@ -34,3 +34,9 @@ prostředí neposkytly novou konfiguraci, herní knihovny, SDK, kompilátor ani 
 Stavy se nemění; jde o druhý po sobě jdoucí běh bez pokroku. Záznam:
 reports/2026-09-25-005.md. Při třetí stejné kontrole bez nového vstupu navrhnout
 pozastavení, nikoli vyrábět náhradní úkol nebo opakovat hotové rešerše.
+
+Kontrola 2026-09-25 / 006: nové vstupy XSG-001 ani testovací výsledky nepřibyly;
+jde o třetí po sobě jdoucí běh bez pokroku. Záznam:
+reports/2026-09-25-006.md. Doporučení: pozastavit plánované běhy, dokud
+nebude dostupná skutečná verze/platforma/OS hry, odpovídající DLL a build
+prostředí. Projekt ani rozvrh se tímto záznamem automaticky nemění.
