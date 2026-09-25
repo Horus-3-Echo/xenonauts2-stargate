@@ -28,3 +28,9 @@ Rozšíření dokumentace je hotové jen tehdy, když odstraňuje konkrétní te
 Kontrola 2026-09-25 / 004: nové vstupy ani výsledky testů nejsou dostupné;
 všechny stavy zůstávají beze změny. První běh bez pokroku, nikoli dokončení XSG-001.
 Záznam: reports/2026-09-25-004.md. Nezakládat náhradní READY práci jen kvůli běhu.
+
+Kontrola 2026-09-25 / 005: ani vzdálený `main`, čistá pracovní kopie a dostupné
+prostředí neposkytly novou konfiguraci, herní knihovny, SDK, kompilátor ani log.
+Stavy se nemění; jde o druhý po sobě jdoucí běh bez pokroku. Záznam:
+reports/2026-09-25-005.md. Při třetí stejné kontrole bez nového vstupu navrhnout
+pozastavení, nikoli vyrábět náhradní úkol nebo opakovat hotové rešerše.
