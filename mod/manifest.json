@@ -1,0 +1,15 @@
+{
+  "version": "0.0.4",
+  "asset": {
+    "Name": "Stargate X2 - Loader Prototype",
+    "UID": "83b86176-5c69-4d89-bc7d-5dfbc349f70b",
+    "Description": "Development loader probe 0.1.0. Gate expeditions are not implemented yet.",
+    "Author": "Horus-3-Echo",
+    "Tags": [
+      "Mod"
+    ],
+    "Version": "0.1.0",
+    "$type": "Common.Content.DataStructures.ContentPackManifest"
+  },
+  "$type": "Common.Content.DataStructures.VersionedAsset"
+}

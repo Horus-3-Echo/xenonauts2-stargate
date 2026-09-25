@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <!-- Replace with paths belonging to your verified game build. -->
+    <GameManagedPath>C:/REPLACE/Xenonauts2_Data/Managed</GameManagedPath>
+    <ExternalManagedPath>C:/REPLACE/Xenonauts2_Data/Managed</ExternalManagedPath>
+  </PropertyGroup>
+</Project>
